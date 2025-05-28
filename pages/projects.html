@@ -4,51 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../style.css">
-    <script src="https://kit.fontawesome.com/002d7bf3c6.js" crossorigin="anonymous"></script>
+    <title>projects</title>
 
-    <title>Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/002d7bf3c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
+
+    <header>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li class="navbar-item">
-                    <form action="../index.html"><button class="navbar-link">Main</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="about.html"><button class="navbar-link">About</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="resume.html"><button class="navbar-link">Resume</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="projects.html"><button class="navbar-link active">Projects</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="contacts.html"><button class="navbar-link">Contacts</button></form>
-                </li>
+                <li class="navbar-item"><a href="about.html" class="navbar-link">Обо мне</a></li>
+                <li class="navbar-item"><a href="resume.html" class="navbar-link">Резюме</a></li>
+                <li class="navbar-item"><a href="projects.html" class="navbar-link active">Проекты</a></li>
+                <li class="navbar-item"><a href="contacts.html" class="navbar-link">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="projects">
-        <h1>Мои проекты</h1>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-            <div style="background: #2d3748; padding: 1rem; border-radius: 8px; width: 300px;">
-                <h2><a href="https://github.com/Geniusmediocrity/Portfolio">Сайт портфолио</a></h2>
-                <p>Использованные технологии: HTML, CSS.</p>
+    <main class="content">
+        <div class="profile-section">
+            <div class="profile-card">
+                <img src="../images/avatar.jpg" alt="Avatar" class="avatar">
+                <h2>Жердев Алексей</h2>
+                <p class="job-title" style="text-indent: 0px;">Разработчик</p>
+                <hr>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-envelope"></i> Email:</span>
+                        <p><a href="mailto:lesal2767@gmail.com">lesal2767@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-phone"></i> Телефон:</span>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-cake-candles"></i> День рождения:</span>
+                        <p>Март 8, 2009</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-city"></i> Город:</span>
+                        <p>Москва, Россия</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <div class="info-item">
+                        <a href="https://github.com/geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-github"></i> github
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <a href="https://gitlab.com/geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-gitlab"></i> gitlab
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <a href="https://t.me/Geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-telegram"></i> Telegram
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div style="background: #2d3748; padding: 1rem; border-radius: 8px; width: 300px;">
-                <h2><a href="https://github.com/Geniusmediocrity/FreeAIAsistant">Бот ИИ Асистент</a></h2>
-                <p>Использованные технологии: Python, PostgreSQL, Aiogram, Pandas, Aiohttp, .Env</p>
+
+            <div class="projects-content">
+                <h1><i class="fa-solid fa-diagram-project"></i> Мои проекты</h1>
+                <div class="projects-grid">
+
+                    <div class="projects-item">
+                        <i class="fa-solid fa-file-code"></i>
+                        <h2><a href="https://github.com/Geniusmediocrity/Portfolio" target="_blank">Сайт портфолио</a></h2>
+                        <p>Использованные технологии: HTML, CSS.</p>
+                    </div>
+
+                    <div class="projects-item">
+                        <i class="fa-solid fa-robot"></i>
+                        <h2><a href="https://github.com/Geniusmediocrity/FreeAIAsistant" target="_blank">Бот ИИ Асистент</a></h2>
+                        <p>Использованные технологии: Python, PostgreSQL, Aiogram, Pandas, Aiohttp, .Env</p>
+                    </div>
+
+                    <div class="projects-item">
+                        <i class="fa-solid fa-language"></i>
+                        <h2><a href="https://github.com/Geniusmediocrity/Translator" target="_blank">Бот Переводчик</a></h2>
+                        <p>Использованные технологии: Python, Aiogram, Translate, .Env</p>
+                    </div>
+
+                    <!--? Блоки ниже нужны для массовки -->
+                    <div class="projects-item">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <h2><a href="https://github.com/Geniusmediocrity" target="_blank">Еще какой-то проект</a></h2>
+                        <p>Использованные технологии: воздух, чай, печеньки</p>
+                    </div>
+
+                    <div class="projects-item">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <h2><a href="https://github.com/Geniusmediocrity" target="_blank">Еще какой-то проект</a></h2>
+                        <p>Использованные технологии: воздух, чай, печеньки</p>
+                    </div>
+
+                    <div class="projects-item">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <h2><a href="https://github.com/Geniusmediocrity" target="_blank">Еще какой-то проект</a></h2>
+                        <p>Использованные технологии: воздух, чай, печеньки</p>
+                    </div>
+
+                </div>
+
             </div>
-            <div style="background: #2d3748; padding: 1rem; border-radius: 8px; width: 300px;">
-                <h2><a href="https://github.com/Geniusmediocrity/Translator">Бот Переводчик</a></h2>
-                <p>Использованные технологии: Python, Aiogram, Translate, .Env</p>
-            </div>
+
         </div>
     </main>
-
 </body>
 </html>

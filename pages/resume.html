@@ -3,53 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Resume</title>
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/002d7bf3c6.js" crossorigin="anonymous"></script>
 
-    <title>Resume</title>
+    <style>
+        h3 {
+            color: whitesmoke
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
+    <header>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li class="navbar-item">
-                    <form action="../index.html"><button class="navbar-link">Main</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="about.html"><button class="navbar-link active">About</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="resume.html"><button class="navbar-link">Resume</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="projects.html"><button class="navbar-link">Projects</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="contacts.html"><button class="navbar-link">Contacts</button></form>
-                </li>
+                <li class="navbar-item"><a href="about.html" class="navbar-link">Обо мне</a></li>
+                <li class="navbar-item"><a href="resume.html" class="navbar-link active">Резюме</a></li>
+                <li class="navbar-item"><a href="projects.html" class="navbar-link">Проекты</a></li>
+                <li class="navbar-item"><a href="contacts.html" class="navbar-link">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="resume">
-        <h1>Резюме</h1>
-        <section>
-            <h2>Навыки</h2>
-            <ul>
-                <li>HTML / CSS</li>
-                <li>Python</li>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-                <li>Linux</li>
-                <li>Aiogram</li>
-                <li>Git / GitHub</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Образование</h2>
-            <p>Студент первого курса, специальности Информационные Системы и Программированием(ИСИП)</p>
-        </section>
+    <main class="content">
+        <div class="profile-section">
+            <div class="profile-card">
+                <img src="../images/avatar.jpg" alt="Avatar" class="avatar">
+                <h2>Жердев Алексей</h2>
+                <p class="job-title" style="text-indent: 0px;">Разработчик</p>
+                <hr>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-envelope"></i> Email:</span>
+                        <p><a href="mailto:lesal2767@gmail.com">lesal2767@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-phone"></i> Телефон:</span>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-cake-candles"></i> День рождения:</span>
+                        <p>Март 8, 2009</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-city"></i> Город:</span>
+                        <p>Москва, Россия</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <div class="info-item">
+                        <a href="https://github.com/geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-github"></i> github
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <a href="https://gitlab.com/geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-gitlab"></i> gitlab
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <a href="https://t.me/Geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-telegram"></i> Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-content">
+                <h1><i class="fa-solid fa-user"></i>  Резюме</h1>
+                <section class="education">
+
+                    <h2><i class="fa-brands fa-google-scholar"></i> Образование</h2>
+
+                    <div class="edu-item">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Колледж Информатики и Программирования(КИП)</h3>
+                        <p><span class="date">2024 — 2028</span></p>
+                        <p>Студент первого курса, специальности Информационные Системы и Программированием(ИСИП)</p>
+                    </div>
+
+                    <div class="edu-item">
+                        <h3><i class="fa-solid fa-graduation-cap"></i>Stepik</h3>
+                        <p><span class="date">2024 — 2025</span></p>
+                        <p>Окончил курсы:</p>
+                        <ul>
+                            <li>
+                                <a href="https://stepik.org/course/58852/syllabus">Поколение Python: курс для начинающих</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://stepik.org/course/68343/syllabus">Поколение Python: курс для продвинутых</a>
+                            </li>
+
+                            <li>
+                                <a href="https://stepik.org/course/191774/syllabus">Введение в SQL</a>
+                            </li>
+
+                            <li>
+                                <a href="https://stepik.org/course/105359/syllabus">Марафон данных: первое знакомство с SQL и Python</a>
+                            </li>
+
+                            <li>
+                                <a href="https://stepik.org/course/145339/syllabus">Python - Модуль 3 (Библиотеки и файлы)</a>
+                            </li>
+
+                            <li>
+                                <a href="https://stepik.org/course/218158/syllabus">GitHub (mini)</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://stepik.org/course/114642/syllabus">Использование API на языке Python</a>
+                            </li>
+
+                            <li>
+                                <a href="https://stepik.org/course/209204/syllabus">Язык разметки Markdown в Github</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                </section>
+
+                <div class="skills-section">
+                    <h2><i class="fa-solid fa-chart-simple"></i> Мои навыки</h2>
+                    <div class="skill-bar">
+                        <div class="skill-name">HTML<span class="skill-percentage">60%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-name">CSS<span class="skill-percentage">50%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-name">Python<span class="skill-percentage">60%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-name">PostgreSQL<span class="skill-percentage">60%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-name">MySQL<span class="skill-percentage">70%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-name">Linux<span class="skill-percentage">75%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-name">Git<span class="skill-percentage">80%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
 </body>
 </html>

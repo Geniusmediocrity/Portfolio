@@ -3,47 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact</title>
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/002d7bf3c6.js" crossorigin="anonymous"></script>
-
-    <title>Contacts</title>
 </head>
 <body>
-    <header class="header">
+    <header>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li class="navbar-item">
-                    <form action="../index.html"><button class="navbar-link">Главная</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="about.html"><button class="navbar-link">About</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="resume.html"><button class="navbar-link">Resume</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="projects.html"><button class="navbar-link">Projects</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="contacts.html"><button class="navbar-link active">Contacts</button></form>
-                </li>
+                <li class="navbar-item"><a href="about.html" class="navbar-link">Обо мне</a></li>
+                <li class="navbar-item"><a href="resume.html" class="navbar-link">Резюме</a></li>
+                <li class="navbar-item"><a href="projects.html" class="navbar-link">Проекты</a></li>
+                <li class="navbar-item"><a href="contacts.html" class="navbar-link  active">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="contacts">
-        <h1>Свяжитесь со мной</h1>
+    <main class="content">
+        <div class="profile-section">
+            <div class="profile-card">
+                <img src="../images/avatar.jpg" alt="Avatar" class="avatar">
+                <h2>Жердев Алексей</h2>
+                <p class="job-title" style="text-indent: 0px;">Разработчик</p>
+                <hr>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-envelope"></i> Email:</span>
+                        <p><a href="mailto:lesal2767@gmail.com">lesal2767@gmail.com</a></p>
+                    </div>
 
-        <form>
-            
-        </form>
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-phone"></i> Телефон:</span>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
 
-        <p><a href="mailto:lesal2767@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></p>
-        <p><i class="fa-solid fa-phone"></i> Телефон: +7 999 123-45-67</p>
-        <p><i class="fa-solid fa-city"></i> Город: Москва, Россия</p>
-        <p><a href="https://github.com/geniusmediocrity" target="_blank"><i class="fa-brands fa-github"></i> github</a></p>
-        <p><a href="https://gitlab.com/geniusmediocrity" target="_blank"><i class="fa-brands fa-gitlab"></i> gitlab</a></p>
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-cake-candles"></i> День рождения:</span>
+                        <p>Март 8, 2009</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-city"></i> Город:</span>
+                        <p>Москва, Россия</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <div class="info-item">
+                        <a href="https://github.com/geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-github"></i> github
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <a href="https://gitlab.com/geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-gitlab"></i> gitlab
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <a href="https://t.me/Geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-telegram"></i> Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <h1><i class="fa-solid fa-address-card"></i> Контакты</h1>
+                <form class="contact-form">
+                    <h2>Свяжитесь со мной</h2>
+                    <input type="text" placeholder="ФИО" required>
+                    <input type="email" placeholder="eamil" required>
+                    <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                    <button type="submit" onclick="alert('Ваше сообщение отправлено!\nСпасибо за обратную связь!')">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 </html>

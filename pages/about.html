@@ -1,41 +1,146 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="../style.css">
-    <script src="https://kit.fontawesome.com/002d7bf3c6.js" crossorigin="anonymous"></script>
 
-    <title>About</title>
+    <title>About Me</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/002d7bf3c6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="header">
+
+    <header>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li class="navbar-item">
-                    <form action="../index.html"><button class="navbar-link">Main</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="about.html"><button class="navbar-link active">About</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="resume.html"><button class="navbar-link">Resume</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="projects.html"><button class="navbar-link">Projects</button></form>
-                </li>
-                <li class="navbar-item">
-                    <form action="contacts.html"><button class="navbar-link">Contacts</button></form>
-                </li>
+                <li class="navbar-item"><a href="about.html" class="navbar-link active">Обо мне</a></li>
+                <li class="navbar-item"><a href="resume.html" class="navbar-link">Резюме</a></li>
+                <li class="navbar-item"><a href="projects.html" class="navbar-link">Проекты</a></li>
+                <li class="navbar-item"><a href="contacts.html" class="navbar-link">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Обо мне</h1>
-        <p>Меня зовут Алексей, я разработчик с опытом создания функциональных и удобных приложений. 
-            Увлекаюсь linux, программированием на Python с использованием различных библиотек и фреймворков.</p>
+    <main class="content">
+
+        <div class="profile-section">
+            <div class="profile-card">
+                <img src="../images/avatar.jpg" alt="Avatar" class="avatar">
+                <h2>Жердев Алексей</h2>
+                <p class="job-title" style="text-indent: 0px;">Разработчик</p>
+                <hr>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-envelope"></i> Email:</span>
+                        <p><a href="mailto:lesal2767@gmail.com">lesal2767@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-phone"></i> Телефон:</span>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-cake-candles"></i> День рождения:</span>
+                        <p>Март 8, 2009</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span><i class="fa-solid fa-city"></i> Город:</span>
+                        <p>Москва, Россия</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <div class="info-item">
+                        <a href="https://github.com/geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-github"></i> github
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <a href="https://gitlab.com/geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-gitlab"></i> gitlab
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <a href="https://t.me/Geniusmediocrity" target="_blank">
+                            <i class="fa-brands fa-telegram"></i> Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="about-content">
+
+                <h1><i class="fa-solid fa-user"></i> Про меня</h1>
+                <p>Меня зовут Алексей, я разработчик с опытом создания функциональных и удобных приложений.
+                    Увлекаюсь linux, программированием на Python с использованием различных библиотек и фреймворков.
+                    Также занимаюсь разроботкой мелких веб-сайтов с использованием HTML, CSS
+                </p>
+
+                <h2><i class="fa-solid fa-list"></i> Что я могу</h2>
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Веб разработка</h3>
+                        <p>Разработка веб-сайтов не высокой солжности, используя только HTML и CSS</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Разработка Телеграмм-ботов</h3>
+                        <p>Разработка простых и функциональных телеграмм-ботов на Aiogram</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Разработка серверных БД</h3>
+                        <p>Разработка фукциональных, быстры и удобных в использовании серверных баз данных используя
+                            PostgreSQL, MySQL</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Разработка встраиваемых БД</h3>
+                        <p>Разработка фукциональных, быстры и удобных в использовании встраиваемых баз данных используя
+                            SQLite</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h3>Знание и применение Git</h3>
+                        <p>На постоянной основе использую git для хранения своих проектов. Для облачного хранения
+                            использую github и gitlab</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-brands fa-linux"></i>
+                        <h3>Владение командной строкой Linux</h3>
+                        <p>На постоянной основе в Windows использую WSL Ubuntu на zsh. Также пользуюсь Linux Manjaro,
+                            тоже на zsh</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-brands fa-microsoft"></i>
+                        <h3>Работа с Microsoft Office</h3>
+                        <p>Базовые знания по работе с пакетом Microsoft Office, а именно: Word, Excel, PowerPoint</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
 </body>
+
 </html>
