@@ -45,6 +45,10 @@ p {
 }
 
 .about-content, .resume-content, .projects-content, .contact-content {
+    /* border: 1px solid #ffcc00; */
+    padding: 0.6rem;
+    border-radius: 8px;
+    background-color: #222937cf;
     flex: 1;
 }
 
@@ -92,7 +96,7 @@ i.fa-brands, i.fa-solid {
     transform: translateY(-1px); 
 }
 
-/* Profile: */
+/*? Profile: */
 .profile-section {
     display: flex;
     gap: 2rem;
@@ -151,14 +155,14 @@ i.fa-brands, i.fa-solid {
     font-size: 1.2rem;
 }
 
-/* About: */
-.services-grid {
+/*? About and Projects: */
+.services-grid, .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
-.service-card {
+.service-card, .projects-item {
     background-color: #2d3748;
     padding: 1rem;
     border-radius: 8px;
@@ -169,33 +173,12 @@ i.fa-brands, i.fa-solid {
     transition: all 0.3s ease;
 }
 
-.service-card:hover {
+.service-card:hover, .projects-item:hover {
     transform: translateY(-2px);
     border: 1px solid hsl(0, 0%, 22%);
 }
 
-/* Projects */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-.projects-item {
-    background-color: #2d3748;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    width: 300px;
-    transition: all 0.3s ease;
-}
-
-.projects-item:hover {
-    transform: translateY(-2px);
-    border: 1px solid hsl(0, 0%, 22%);
-}
-
-/* Contacts */
+/*? Contacts */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -227,9 +210,18 @@ i.fa-brands, i.fa-solid {
     transform: translateY(-1px); 
 }
 
-/* Resume */
+/*? Resume */
+.edu-item li{
+    list-style: disc;
+    margin-left: 3.5rem;
+}
 
-/* TODO */
+div.vertical-line{
+    margin-right: 10px;
+    width: 0px;
+    float: left; 
+    border: 1px inset;
+    }
 
 /* Стили для секции навыков */
 .skills-section {
@@ -241,6 +233,12 @@ i.fa-brands, i.fa-solid {
     background-color: #2d3748;
     border-radius: 8px;
     padding: 1rem;
+    transition: all 0.5s ease;
+}
+
+.skill-bar:hover {
+    transform: translateY(-1px);
+    border: 1px solid hsl(0, 0%, 22%);
 }
 
 .skill-name {
